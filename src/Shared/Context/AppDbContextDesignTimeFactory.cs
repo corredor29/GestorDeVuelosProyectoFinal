@@ -10,11 +10,11 @@ public class AppDbContextDesignTimeFactory : IDesignTimeDbContextFactory<AppDbCo
 {
     public AppDbContext CreateDbContext(string[] args)
     {
-        var basePath = Directory.GetCurrentDirectory();
+        var basePath = AppContext.BaseDirectory;
 
         var config = new ConfigurationBuilder()
             .SetBasePath(basePath)
-            .AddJsonFile("appsettings.json", optional: true)
+            .AddJsonFile("appsettings.json", optional: false)
             .AddEnvironmentVariables()
             .Build();
 

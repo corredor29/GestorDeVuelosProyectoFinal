@@ -4,6 +4,8 @@ using GestorDeVuelosProyectoFinal.src.Moduls.Continents.Infrastructure.Entity;
 using GestorDeVuelosProyectoFinal.src.Moduls.Countries.Infrastructure.Entity;
 using GestorDeVuelosProyectoFinal.src.Moduls.Regions.Infrastructure.Entity;
 using GestorDeVuelosProyectoFinal.src.Moduls.DocumentTypes.Infrastructure.Entity;
+using GestorDeVuelosProyectoFinal.src.Moduls.ViaTypes.Infrastructure.Entity;
+
 
 namespace GestorDeVuelosProyectoFinal.src.Shared.Context;
 
@@ -13,7 +15,7 @@ public class AppDbContext : DbContext
     public DbSet<CountriesEntity> Countries { get; set; }
     public DbSet<RegionsEntity> Regions { get; set; }
     public DbSet<DocumentTypesEntity> DocumentTypes { get; set; }
-
+    public DbSet<ViaTypesEntity> ViaTypes { get; set; }
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
