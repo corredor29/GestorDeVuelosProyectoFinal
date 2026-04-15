@@ -4,6 +4,7 @@ using GestorDeVuelosProyectoFinal.src.Shared.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestorDeVuelosProyectoFinal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260415033508_Contries")]
+    partial class Contries
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,36 +79,6 @@ namespace GestorDeVuelosProyectoFinal.Migrations
                     b.ToTable("countries", (string)null);
                 });
 
-            modelBuilder.Entity("GestorDeVuelosProyectoFinal.src.Moduls.Regions.Infrastructure.Entity.RegionsEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)")
-                        .HasColumnName("id");
-
-                    b.Property<Guid>("Countries_id")
-                        .HasColumnType("char(36)")
-                        .HasColumnName("countries_id");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("name");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("varchar(30)")
-                        .HasColumnName("type");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Countries_id");
-
-                    b.ToTable("regions", (string)null);
-                });
-
             modelBuilder.Entity("GestorDeVuelosProyectoFinal.src.Moduls.Countries.Infrastructure.Entity.CountriesEntity", b =>
                 {
                     b.HasOne("GestorDeVuelosProyectoFinal.src.Moduls.Continents.Infrastructure.Entity.ContinentsEntity", "Continents")
@@ -117,25 +90,9 @@ namespace GestorDeVuelosProyectoFinal.Migrations
                     b.Navigation("Continents");
                 });
 
-            modelBuilder.Entity("GestorDeVuelosProyectoFinal.src.Moduls.Regions.Infrastructure.Entity.RegionsEntity", b =>
-                {
-                    b.HasOne("GestorDeVuelosProyectoFinal.src.Moduls.Countries.Infrastructure.Entity.CountriesEntity", "Countries")
-                        .WithMany("Regions")
-                        .HasForeignKey("Countries_id")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Countries");
-                });
-
             modelBuilder.Entity("GestorDeVuelosProyectoFinal.src.Moduls.Continents.Infrastructure.Entity.ContinentsEntity", b =>
                 {
                     b.Navigation("Countries");
-                });
-
-            modelBuilder.Entity("GestorDeVuelosProyectoFinal.src.Moduls.Countries.Infrastructure.Entity.CountriesEntity", b =>
-                {
-                    b.Navigation("Regions");
                 });
 #pragma warning restore 612, 618
         }
