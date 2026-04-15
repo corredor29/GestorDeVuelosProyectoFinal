@@ -2,7 +2,6 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using GestorDeVuelosProyectoFinal.src.Shared.Helpers;
 
 namespace GestorDeVuelosProyectoFinal.src.Shared.Context;
 
@@ -26,18 +25,9 @@ public class AppDbContextDesignTimeFactory : IDesignTimeDbContextFactory<AppDbCo
             throw new InvalidOperationException("No se encontró una cadena de conexión válida.");
         }
 
-        var detectedVersion = MySqlVersionResolver.DetectVersion(connectionString);
-        var minVersion = new Version(8, 0, 0);
-
-        if (detectedVersion < minVersion)
-        {
-            throw new NotSupportedException(
-                $"Versión de MySQL no soportada: {detectedVersion}. Requiere {minVersion} o superior."
-            );
-        }
-
+        // CLAVE: versión fija (NO detectar en design-time)
         var options = new DbContextOptionsBuilder<AppDbContext>()
-            .UseMySql(connectionString, new MySqlServerVersion(detectedVersion))
+            .UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 0)))
             .Options;
 
         return new AppDbContext(options);
