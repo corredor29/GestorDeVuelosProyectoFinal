@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/GestorDeVuelosProyectoFinal.csproj": {}
+    "C:\\Users\\LENOVO\\Documents\\Campus\\C#\\Proyecto\\GestorDeVuelosProyectoFinal\\GestorDeVuelosProyectoFinal.csproj": {}
   },
   "projects": {
-    "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/GestorDeVuelosProyectoFinal.csproj": {
+    "C:\\Users\\LENOVO\\Documents\\Campus\\C#\\Proyecto\\GestorDeVuelosProyectoFinal\\GestorDeVuelosProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/GestorDeVuelosProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\Campus\\C#\\Proyecto\\GestorDeVuelosProyectoFinal\\GestorDeVuelosProyectoFinal.csproj",
         "projectName": "GestorDeVuelosProyectoFinal",
-        "projectPath": "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/GestorDeVuelosProyectoFinal.csproj",
-        "packagesPath": "/Users/wen/.nuget/packages/",
-        "outputPath": "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/obj/",
+        "projectPath": "C:\\Users\\LENOVO\\Documents\\Campus\\C#\\Proyecto\\GestorDeVuelosProyectoFinal\\GestorDeVuelosProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Documents\\Campus\\C#\\Proyecto\\GestorDeVuelosProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/wen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
