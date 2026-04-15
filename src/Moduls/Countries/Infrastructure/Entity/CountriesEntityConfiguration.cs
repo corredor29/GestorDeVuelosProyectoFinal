@@ -26,7 +26,7 @@ public class CountriesEntityConfiguration : IEntityTypeConfiguration<CountriesEn
 
         builder.HasIndex(x => x.IsoCode)
             .IsUnique();
-            builder.Property(x => x.Continents_id)
+        builder.Property(x => x.Continents_id)
         .HasColumnName("continente_id")
         .IsRequired();
 
