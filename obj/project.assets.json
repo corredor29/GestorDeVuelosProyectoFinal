@@ -2832,19 +2832,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/wen/.nuget/packages/": {}
+    "C:\\Users\\corre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/GestorDeVuelosProyectoFinal.csproj",
+      "projectUniqueName": "D:\\Documentos\\GestorDeVuelosProyectoFinal\\GestorDeVuelosProyectoFinal.csproj",
       "projectName": "GestorDeVuelosProyectoFinal",
-      "projectPath": "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/GestorDeVuelosProyectoFinal.csproj",
-      "packagesPath": "/Users/wen/.nuget/packages/",
-      "outputPath": "/Users/wen/Desktop/GestorDeVuelosProyectoFinal-1/obj/",
+      "projectPath": "D:\\Documentos\\GestorDeVuelosProyectoFinal\\GestorDeVuelosProyectoFinal.csproj",
+      "packagesPath": "C:\\Users\\corre\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\GestorDeVuelosProyectoFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/wen/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\corre\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -2917,7 +2917,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
