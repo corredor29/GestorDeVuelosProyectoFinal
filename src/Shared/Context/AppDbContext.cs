@@ -6,6 +6,7 @@ using GestorDeVuelosProyectoFinal.src.Moduls.Regions.Infrastructure.Entity;
 using GestorDeVuelosProyectoFinal.src.Moduls.DocumentTypes.Infrastructure.Entity;
 using GestorDeVuelosProyectoFinal.src.Moduls.ViaTypes.Infrastructure.Entity;
 using GestorDeVuelosProyectoFinal.src.Moduls.Addresses.Infrastructure.Entity;
+using GestorDeVuelosProyectoFinal.src.Moduls.People.Infrastructure.Entity;
 
 namespace GestorDeVuelosProyectoFinal.src.Shared.Context;
 
@@ -17,6 +18,7 @@ public class AppDbContext : DbContext
     public DbSet<DocumentTypesEntity> DocumentTypes { get; set; }
     public DbSet<ViaTypesEntity> ViaTypes { get; set; }
     public DbSet<AddressesEntity> Addresses { get; set; }
+    public DbSet<PeopleEntity> People { get; set; }
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,6 +1,7 @@
 using System;
 using GestorDeVuelosProyectoFinal.src.Moduls.Cities.Infrastructure.Entity;
 using GestorDeVuelosProyectoFinal.src.Moduls.ViaTypes.Infrastructure.Entity;
+using GestorDeVuelosProyectoFinal.src.Moduls.People.Infrastructure.Entity;
 namespace GestorDeVuelosProyectoFinal.src.Moduls.Addresses.Infrastructure.Entity;
 
 public class AddressesEntity
@@ -14,4 +15,6 @@ public class AddressesEntity
     public string Postal_code {get; set;} = string.Empty;
     public ViaTypesEntity ViaTypes {get; set;} = null!;
     public CitiesEntity Cities {get; set;} = null!;
+    public  ICollection<PeopleEntity> People { get; set; } = new List<PeopleEntity>();
+
 }
