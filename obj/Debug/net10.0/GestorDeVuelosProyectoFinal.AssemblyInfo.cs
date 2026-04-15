@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestorDeVuelosProyectoFinal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5816a702be189ed86184cc9d5c605bdff5329e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29198a4f63423017f7aa538ee6a6d3e4544e6eaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestorDeVuelosProyectoFinal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestorDeVuelosProyectoFinal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
